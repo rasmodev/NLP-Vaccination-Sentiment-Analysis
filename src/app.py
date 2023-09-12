@@ -1,10 +1,12 @@
 import gradio as gr
+import numpy 
+import pandas
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
 # Load the fine-tuned model and tokenizer
-model = AutoModelForSequenceClassification.from_pretrained("path_to_saved_model")
-tokenizer = AutoTokenizer.from_pretrained("path_to_saved_tokenizer")
+model = AutoModelForSequenceClassification.from_pretrained("rasmodev/Covid-19_Sentiment_Analysis_RoBERTa_Model")
+tokenizer = AutoTokenizer.from_pretrained("rasmodev/Covid-19_Sentiment_Analysis_RoBERTa_Model")
 
 # Define the prediction function
 def predict_sentiment(text):
