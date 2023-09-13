@@ -67,9 +67,8 @@ interface = gr.Interface(
     description="This App Analyzes the sentiment of COVID-19 related tweets. Negative: Indicates a negative sentiment, Neutral: Indicates a neutral sentiment, Positive: Indicates a positive sentiment.",
     theme="default",
     layout="vertical",
-    example=[["The Vaccine is Good I have had no issues!"]],
-    custom_css="""body { background-color: #f5f5f5; }""",
-    banner="https://www.coe.int/documents/6827565/67014029/img-vaccine3.jpg/0e606666-2b28-c08e-1ecf-7f09eab215b5?t=1611321500000"
+    examples=[["The Vaccine is Good I have had no issues!"]],
+    custom_css="""body { background-color: #f5f5f5; }"""
 )
 
 # Launch the Gradio app
