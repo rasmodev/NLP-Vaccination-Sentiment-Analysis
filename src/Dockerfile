@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 7860
 
 # Command to run the Gradio app when the container starts
-CMD ["python", "app.py"]
+CMD ["python", "src/app.py"]
