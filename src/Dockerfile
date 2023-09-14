@@ -1,4 +1,4 @@
-# Use the official Python image as the base image
+# Use the official Python 3.11.3 image as the base image.
 FROM python:3.11.3
 
 # Set the working directory in the container
