@@ -1,0 +1,1 @@
+docker build -t gradio-app -f src/Dockerfile .
