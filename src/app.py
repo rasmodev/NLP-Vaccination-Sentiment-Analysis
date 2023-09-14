@@ -10,6 +10,7 @@ Original file is located at
 # Commented out IPython magic to ensure Python compatibility.
 # %pip install gradio transformers -q
 
+# Import the key libraries
 import gradio as gr
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -47,18 +48,18 @@ def sentiment_analysis(text):
     # Define labels and corresponding colors
     labels = ['Negative', 'Neutral', 'Positive']
     colors = ['red', 'yellow', 'green']
-    font_colors = ['black', 'black', 'white']
+    font_colors = ['white', 'black', 'white']
 
     # Find the label with the highest percentage
     max_label = labels[scores_.argmax()]
     max_percentage = scores_.max() * 100
 
     # Create HTML for the label with the specified style
-    label_html = f'<div style="display: flex; justify-content: center;"><button style="text-align: center; font-size: 16px; padding: 10px; border-radius: 15px; background-color: {colors[labels.index(max_label)]}; color: {font_colors[labels.index(max_label)]};">{max_label}</button></div>'
+    label_html = f'<div style="display: flex; justify-content: center;"><button style="text-align: center; font-size: 16px; padding: 10px; border-radius: 15px; background-color: {colors[labels.index(max_label)]}; color: {font_colors[labels.index(max_label)]};">{max_label}({max_percentage:.2f}%)</button></div>'
 
     return label_html
 
-# Create a Gradio interface with a submit button
+# Create a Gradio interface
 interface = gr.Interface(
     fn=sentiment_analysis,
     inputs=gr.Textbox(placeholder="Write your tweet here..."),
@@ -66,11 +67,14 @@ interface = gr.Interface(
     title="COVID-19 Sentiment Analysis App",
     description="This App Analyzes the sentiment of COVID-19 related tweets. Negative: Indicates a negative sentiment, Neutral: Indicates a neutral sentiment, Positive: Indicates a positive sentiment.",
     theme="default",
-    layout="vertical",
-    examples=[["The Vaccine is Good I have had no issues!"]],
+    layout="horizontal",
+    examples=[
+        ["This vaccine is terrible!"],
+        ["I don't have a strong opinion about this vaccines."],
+        ["The Vaccine is Good I have had no issues!"]
+    ],
     custom_css="""body { background-color: #f5f5f5; }"""
 )
 
 # Launch the Gradio app
 interface.launch()
-
