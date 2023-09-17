@@ -72,8 +72,7 @@ interface = gr.Interface(
         ["This vaccine is terrible!"],
         ["I don't have a strong opinion about this vaccines."],
         ["The Vaccine is Good I have had no issues!"]
-    ],
-    custom_css="""body { background-color: #f5f5f5; }"""
+    ]
 )
 
 # Launch the Gradio app
