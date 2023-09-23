@@ -72,9 +72,9 @@ interface = gr.Interface(
         ["This vaccine is terrible!"],
         ["I don't have a strong opinion about this vaccines."],
         ["The Vaccine is Good I have had no issues!"]
-    ],
-    custom_css="""body { background-color: #f5f5f5; }"""
+    ]
 )
 
 # Launch the Gradio app
-interface.launch()
+if __name__ == '__main__':
+    interface.launch(server_name="0.0.0.0", server_port=7860, share=True)
