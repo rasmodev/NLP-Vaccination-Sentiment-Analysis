@@ -1,6 +1,11 @@
 # NLP-Vaccination-Sentiment-Analysis
 This repository contains the necessary code and resources for participating in the Zindi NLP Challenge titled "To Vaccinate or Not to Vaccinate." The challenge revolves around developing a machine learning model that can effectively determine the sentiment (positive, neutral, negative) in Twitter posts related to vaccination topics. By analyzing public sentiment, the solution aims to aid public health organizations and policymakers in devising effective strategies for vaccine communication and promotion.
 
+## Summary
+|     Jupyter Notebook                       | Published Article|    Link To Working App on Hugging Face
+| -------------                  | -------------    |    -----------------
+|[Notebook with code and full analysis](https://github.com/rasmodev/NLP-Vaccination-Sentiment-Analysis/blob/main/NLP_Vaccination_Sentiment_Analysis_RoBERTa.ipynb)|  [Published Article](https://medium.com/@rasmowanyama/sentiment-analysis-of-covid-19-tweets-from-model-training-to-docker-deployment-e73ba2a7aebf)               |[App Link](https://huggingface.co/spaces/rasmodev/Covid-19_Tweets_Sentiment_Analysis_App)
+
 ## Challenge Description
 
 Work has begun towards developing a COVID-19 vaccine, and monitoring public sentiment towards vaccinations is crucial. The challenge involves classifying Twitter posts as positive, neutral, or negative regarding vaccinations.
