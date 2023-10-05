@@ -6,6 +6,22 @@ This repository contains the necessary code and resources for participating in t
 | -------------                  | -------------    |    -----------------
 |[Notebook with code and full analysis](https://github.com/rasmodev/NLP-Vaccination-Sentiment-Analysis/blob/main/NLP_Vaccination_Sentiment_Analysis_RoBERTa.ipynb)|  [Published Article](https://medium.com/@rasmowanyama/sentiment-analysis-of-covid-19-tweets-from-model-training-to-docker-deployment-e73ba2a7aebf)               |[App Link](https://huggingface.co/spaces/rasmodev/Covid-19_Tweets_Sentiment_Analysis_App)
 
+## App Interface
+Add the text you want to analyze and click on the **SUBMIT** button.
+
+### Before Prediction
+
+![App Screenshot](https://github.com/rasmodev/NLP-Vaccination-Sentiment-Analysis/blob/main/screenshots/HF_No_Pred.png)
+
+### Negative Prediction
+![App Screenshot](https://github.com/rasmodev/NLP-Vaccination-Sentiment-Analysis/blob/main/screenshots/HF_Negative.png)
+
+### Neutral Prediction
+![App Screenshot](https://github.com/rasmodev/NLP-Vaccination-Sentiment-Analysis/blob/main/screenshots/HF_Neutral.png)
+
+### Positive Prediction
+![App Screenshot](https://github.com/rasmodev/NLP-Vaccination-Sentiment-Analysis/blob/main/screenshots/HF_Positive.png)
+
 ## Challenge Description
 
 Work has begun towards developing a COVID-19 vaccine, and monitoring public sentiment towards vaccinations is crucial. The challenge involves classifying Twitter posts as positive, neutral, or negative regarding vaccinations.
