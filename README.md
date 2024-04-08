@@ -4,7 +4,7 @@ This repository contains the necessary code and resources for participating in t
 ## Summary
 |     Jupyter Notebook                       | Published Article|    Link To Working App on Hugging Face
 | -------------                  | -------------    |    -----------------
-|[Notebook with code and full analysis](https://github.com/rasmodev/NLP-Vaccination-Sentiment-Analysis/blob/main/dev/NLP_Vaccination_Sentiment_Analysis_RoBERTa.ipynb)|  [Published Article](https://medium.com/@rasmowanyama/sentiment-analysis-of-covid-19-tweets-from-model-training-to-docker-deployment-e73ba2a7aebf)               |[App Link](https://huggingface.co/spaces/rasmodev/Covid-19_Tweets_Sentiment_Analysis_App)
+|[Notebook with code and full analysis](https://github.com/rasmodev/NLP-Vaccination-Sentiment-Analysis/blob/main/dev/NLP_Vaccination_Sentiment_Analysis_RoBERTa.ipynb)|  [Published Article](https://medium.com/@rasmowanyama/sentiment-analysis-of-covid-19-tweets-from-model-training-to-docker-deployment-e73ba2a7aebf)|[App Link](https://rasmodev-covid19-tweet-sentiment-analysis-app.hf.space)
 
 ## App Interface
 Add the text you want to analyze and click on the **SUBMIT** button.
